@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BEFORE-AFTER EFFECT</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/beforeAfter.js"></script>	
+
+		<script type="text/javascript">
+			$(function(){
+			$('#container1').beforeAfter();
+			$('#container2').beforeAfter({'direction' : 'v', 'background': 'url("img/bar.png")', 'barSize': 15});
+			$('#container3').beforeAfter({'start' : 'begin', 'barSize' : '1', 'returnToCenter' : false, 'background' : 'white'});
+			});			
+		</script>
+
+	</head>
+	<body>
+		<div class="row ">
+			<div class="block">
+				<h1>EFEITO BEFORE | AFTER - JQUERY</h1>
+				<h2>IFSP Caraguatatuba</h2>
+				<h2>Desenvolvimento WEB</h2>
+				<h2>Dérick Welman</h2><br>
+			</div>
+		</div>
+		<div class="row filled">
+			<div class="block">
+				<h1>Apresentação do plugin</h1>
+				<div id="container1" class="float-left">
+					<div><img alt="before" src="img/before1.jpg" width="375" height="400px"/></div>
+					<div><img alt="after" src="img/after1.jpg" width="375" height="400px"/></div>
+				</div>
+				<div id="container2" class="center float-right">
+					<div><img alt="before" src="img/before2.jpg" width="375" height="400px"/></div>
+					<div><img alt="after" src="img/after2.jpg" width="375" height="400px"/></div>
+				</div>
+				<span class="clear"></span><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="block">
+				<h1>Arquivos necessários</h1>
+				<center><img src="img/resources.png" class="center" width="600" style="padding:30px;"></img></center>
+			</div>
+		</div>
+		<div class="row filled">
+			<div class="block">
+				<h1>Funcionamento</h1>
+				<center><img src="img/how-work.png" class="center" width="500" style="padding:30px;"></img></center>
+			</div>
+		</div>
+		<div class="row">
+			<div class="block">
+				<h1>Instalação</h1>
+				<h3>HTML</h3>
+				<img src="img/html.png" width="100%">
+				<h3>Importação</h3>
+				<img src="img/import.png"  width="100%">
+				<h3>Chamada para função / Opções</h3>
+				<img src="img/using.png"  width="100%">
+				<h3>Opções</h3>
+				<ul>
+					<li>direction : <span class="blue">'h' | 'v'</span></li>
+					<li>returnToCenter : <span class="blue">true | false</span></li>
+					<li>background : <span class="blue">'Cor ou imagem de fundo'</span></li>
+					<li>barSize : <span class="blue">tamanho da barra em pixels</span></li>
+					<li>start : <span class="blue">'begin' | 'center' | 'end'</span></li>
+				</ul>
+				<div id="container3" class="center">
+					<div><img alt="before" src="img/before3.jpg" width="100%" height="400px"/></div>
+					<div><img alt="after" src="img/after3.jpg" width="100%" height="400px"/></div>
+				</div>
+				<br>
+			</div>
+		</div>
+		<div class="row filled">
+			<div class="block">
+				<h1>Outros plugins</h1>
+				<h3>Slidescreen</h3>
+				<a href="http://www.pearljammers.pt/slidescreen/">http://www.pearljammers.pt/slidescreen/</a>
+				<h3>Before After</h3>
+				<a href="http://www.catchmyfame.com/catchmyfame-jquery-plugins/jquery-beforeafter-plugin/">http://www.catchmyfame.com/catchmyfame-jquery-plugins/jquery-beforeafter-plugin/</a>
+				<h3>Twenty Twenty</h3>
+				<a href="http://zurb.com/playground/twentytwenty">http://zurb.com/playground/twentytwenty</a><br><br><br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="block">
+				<h1>Obrigado pela atenção!</h1>
+			</div>
+		</div>
+	</body>
+</html>
